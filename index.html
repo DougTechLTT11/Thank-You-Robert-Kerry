@@ -12,7 +12,7 @@
             background-color: #f7f7f7;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Align items at the start of the flex container */
             height: 100vh;
             position: relative;
             overflow: hidden;
@@ -21,7 +21,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            width: 20%;
+            width: 50%; /* Adjusted width to cover half of the screen */
             z-index: 1;
             display: flex;
             flex-direction: column;
@@ -64,6 +64,7 @@
             max-width: 900px;
             text-align: center;
             padding: 20px;
+            margin-top: 50px; /* Adds space at the top */
         }
         h1 {
             font-size: 3em;
@@ -105,7 +106,7 @@
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             margin: 0;
             width: 45%;
-            z-index: 2; /* Ensure it stays above the envelope background */
+            z-index: 2;
         }
         .option:hover {
             background-color: rgba(245, 222, 179, 0.5); /* Light transparent hover effect */
@@ -122,7 +123,8 @@
         .photo-squares {
             display: flex;
             justify-content: space-around;
-            margin-top: 30px;
+            margin-top: 10px; /* Reduced margin to bring it closer to the cards */
+            z-index: 2;
         }
         .photo-squares .square {
             width: 150px;
@@ -150,7 +152,7 @@
         <h1>Thank You</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1920px-Flag_of_Texas.svg.png" alt="Texas Flag" class="texas-flag">
         <div class="container">
-            <img src="https://image.shutterstock.com/image-vector/envelope-icon-mail-260nw-536702297.jpg" alt="Envelope" class="envelope-background">
+            <img src="https://dougtechltt11.github.io/Thank-You-Robert-Kerry/red-envelope.jpg" alt="Envelope" class="envelope-background">
             <div class="option left" onclick="location.href='dougie-card.html'">
                 <h2>Dougie's Card</h2>
                 <p>Click here to open Dougie's thank you card.</p>
