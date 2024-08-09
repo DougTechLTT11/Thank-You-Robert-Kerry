@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .option {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: #f1f1f1;
+        }
+        .left {
+            border-right: 1px solid #dddddd;
+            background-color: #e0f7fa;
+        }
+        .right {
+            background-color: #ffe0b2;
+        }
+        .option h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        .option p {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="option left" onclick="location.href='dougie-card.html'">
+            <h2>Dougie's Card</h2>
+            <p>Click here to open Dougie's thank you card.</p>
+        </div>
+        <div class="option right" onclick="location.href='emmy-card.html'">
+            <h2>Emmy's Card</h2>
+            <p>Click here to open Emmy's thank you card.</p>
+        </div>
+    </div>
+</body>
+</html>
