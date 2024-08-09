@@ -81,6 +81,17 @@
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            position: relative;
+        }
+        .envelope-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            height: auto;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            z-index: 1;
         }
         .option {
             flex: 1;
@@ -93,7 +104,8 @@
             border: 2px solid #D2B48C;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             margin: 0;
-            width: 45%; /* Ensure options are nearly half-width to allow for a natural float */
+            width: 45%;
+            z-index: 2; /* Ensure it stays above the envelope background */
         }
         .option:hover {
             background-color: rgba(245, 222, 179, 0.5); /* Light transparent hover effect */
@@ -138,6 +150,7 @@
         <h1>Thank You</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1920px-Flag_of_Texas.svg.png" alt="Texas Flag" class="texas-flag">
         <div class="container">
+            <img src="https://image.shutterstock.com/image-vector/envelope-icon-mail-260nw-536702297.jpg" alt="Envelope" class="envelope-background">
             <div class="option left" onclick="location.href='dougie-card.html'">
                 <h2>Dougie's Card</h2>
                 <p>Click here to open Dougie's thank you card.</p>
