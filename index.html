@@ -12,7 +12,7 @@
             background-color: #f7f7f7;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             height: 100vh;
             position: relative;
             overflow: hidden;
@@ -21,7 +21,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            width: 50%;
+            width: 20%;
             z-index: 1;
             display: flex;
             flex-direction: column;
@@ -64,7 +64,6 @@
             max-width: 900px;
             text-align: center;
             padding: 20px;
-            margin-top: 50px;
         }
         h1 {
             font-size: 3em;
@@ -82,21 +81,6 @@
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
-            position: relative;
-        }
-        .envelope-background {
-            position: absolute;
-            width: 70%; /* Adjusted width */
-            height: auto;
-            transform: translate(-50%, -50%);
-            opacity: 0.6;
-            z-index: 1;
-        }
-        .envelope-left {
-            left: 30%; /* Adjusted positioning */
-        }
-        .envelope-right {
-            right: 30%; /* Adjusted positioning */
         }
         .option {
             flex: 1;
@@ -109,16 +93,15 @@
             border: 2px solid #D2B48C;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             margin: 0;
-            width: 45%;
-            z-index: 2;
+            width: 45%; /* Ensure options are nearly half-width to allow for a natural float */
         }
         .option:hover {
-            background-color: rgba(245, 222, 179, 0.5);
+            background-color: rgba(245, 222, 179, 0.5); /* Light transparent hover effect */
         }
         .option h2 {
             font-size: 1.8em;
             margin-bottom: 10px;
-            color: #1E90FF;
+            color: #1E90FF; /* Texas Blue */
         }
         .option p {
             font-size: 1.2em;
@@ -127,8 +110,7 @@
         .photo-squares {
             display: flex;
             justify-content: space-around;
-            margin-top: 10px;
-            z-index: 2;
+            margin-top: 30px;
         }
         .photo-squares .square {
             width: 150px;
@@ -156,8 +138,6 @@
         <h1>Thank You</h1>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1920px-Flag_of_Texas.svg.png" alt="Texas Flag" class="texas-flag">
         <div class="container">
-            <img src="https://dougtechltt11.github.io/Thank-You-Robert-Kerry/red-envelope.jpg" alt="Envelope" class="envelope-background envelope-left">
-            <img src="https://dougtechltt11.github.io/Thank-You-Robert-Kerry/red-envelope.jpg" alt="Envelope" class="envelope-background envelope-right">
             <div class="option left" onclick="location.href='dougie-card.html'">
                 <h2>Dougie's Card</h2>
                 <p>Click here to open Dougie's thank you card.</p>
