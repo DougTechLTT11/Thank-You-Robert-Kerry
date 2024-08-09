@@ -60,13 +60,10 @@
         .content {
             position: relative;
             z-index: 2;
-            max-width: 900px;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            padding: 20px;
+            max-width: 900px;
             text-align: center;
+            padding: 20px;
         }
         h1 {
             font-size: 3em;
@@ -92,14 +89,14 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             border-radius: 8px;
-            background-color: #FFF8DC;
+            background-color: transparent;
             border: 2px solid #D2B48C;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             margin: 0;
             width: 45%; /* Ensure options are nearly half-width to allow for a natural float */
         }
         .option:hover {
-            background-color: #F5DEB3;
+            background-color: rgba(245, 222, 179, 0.5); /* Light transparent hover effect */
         }
         .option h2 {
             font-size: 1.8em;
@@ -118,7 +115,7 @@
         .photo-squares .square {
             width: 150px;
             height: 150px;
-            background-color: #f5f5f5;
+            background-color: transparent;
             border: 3px solid #8B4513;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             background-position: center;
