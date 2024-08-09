@@ -20,20 +20,26 @@
         .background-text {
             position: absolute;
             top: 0;
-            left: 0;
-            right: 0;
             bottom: 0;
+            width: 20%;
             z-index: 1;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
             font-family: 'Courier New', Courier, monospace;
             color: rgba(0, 0, 0, 0.1);
         }
+        .background-text.left {
+            left: 0;
+            text-align: right;
+        }
+        .background-text.right {
+            right: 0;
+            text-align: left;
+        }
         .background-text span {
             font-size: calc(1rem + 3vw);
-            margin: 5px;
+            margin: 5px 0;
             font-weight: bold;
             opacity: 0.3;
             animation: float 10s infinite;
@@ -65,13 +71,14 @@
         h1 {
             font-size: 3em;
             color: #B22222; /* Texas Red */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-shadow: 2px 2px #8B0000;
         }
         .texas-flag {
-            width: 100px;
+            width: 120px;
             height: auto;
-            margin-bottom: 20px;
+            margin: 20px auto;
+            display: block;
         }
         .container {
             display: flex;
@@ -119,17 +126,19 @@
     </style>
 </head>
 <body>
-    <div class="background-text">
+    <div class="background-text left">
         <span>Howdy</span><span>Y'all</span><span>Texas</span><span>Austin</span><span>Dallas</span>
         <span>Houston</span><span>San Antonio</span><span>Fort Worth</span><span>Laredo</span>
-        <span>Amarillo</span><span>El Paso</span><span>Waco</span><span>Howdy</span>
-        <span>Y'all</span><span>Rodeo</span><span>Lone Star</span><span>Grit</span>
-        <span>Ranch</span><span>Bluebonnet</span><span>Longhorn</span>
+    </div>
+
+    <div class="background-text right">
+        <span>Amarillo</span><span>El Paso</span><span>Waco</span><span>Rodeo</span><span>Lone Star</span>
+        <span>Grit</span><span>Ranch</span><span>Bluebonnet</span><span>Longhorn</span>
     </div>
 
     <div class="content">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1920px-Flag_of_Texas.svg.png" alt="Texas Flag" class="texas-flag">
         <h1>Thank You</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1920px-Flag_of_Texas.svg.png" alt="Texas Flag" class="texas-flag">
         <div class="container">
             <div class="option left" onclick="location.href='dougie-card.html'">
                 <h2>Dougie's Card</h2>
